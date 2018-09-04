@@ -1,0 +1,14 @@
+[[project]]
+name = "DIV - Driver Interaction with Vulnerable Road Users"
+description = "This project investigates comfort boundaries between motorists and VRU to develop a driver model for crossing and longitudinal scenarios. Interaction between motorists and cyclists is the focus of the project and will result in models to be verified using (naturalistic) field data. Interaction between motorists and pedestrians are also investigated in this project. Models will be implemented in Matlab to enable counterfactual simulations (Bärgman et al., 2017) in the verification phase and in future projects."
+id = 7041
+
+[[project]]
+name="HFAuto - Human Factors of Automated Driving"
+description = ""
+id = 5380
+
+[[project]]
+name = "MICA - Modelling Interaction between Cyclists and Automobiles"
+description = "The MICA project will model the interaction between cyclists and vehicles to 1) inform the design of intelligent (cooperative) systems such as Frontal Collision Warning and Automated Emergency Braking, 2) guide the development of test scenarios for Euro NCAP (including virtual simulations), and 3) help automated vehicles understand how to behave without surprising or scaring cyclists."
+id = 8067

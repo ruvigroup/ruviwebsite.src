@@ -1,0 +1,62 @@
+[[member]]
+name = "Marco Dozza"
+cid = "dozza"
+title = "Associate Professor"
+photoid = "TM/Personal/marcodozza"
+chalmers = "marco-dozza"
+
+[[member]]
+name = "Trent Victor"
+cid = "trent"
+title = "Adjunct Professor"
+photoid = "TM/Personal/trentvictor"
+chalmers = "trent-victor"
+
+[[member]]
+name = "Giulio Bianchi Piccinini"
+cid = "fgiulio"
+title = "Assistant Professor"
+photoid = "TM/Personal/giuliofrancescobianchipiccinini"
+chalmers = "giulio-piccinini"
+
+[[member]]
+name = "Esko Lehtonen"
+cid = "eskol"
+title = "Post-doc"
+photoid = "M2/esko.lehtonen"
+chalmers = "esko-lehtonen"
+
+[[member]]
+name = "Alberto Morando"
+cid = "morando"
+title = "Ph.D. Student"
+chalmers = "alberto-morando"
+
+[[member]]
+name = "Jordanka Kovaceva"
+cid = "kovaceva"
+title = "Ph.D. Student"
+photoid = "TM/Personal/jordanka"
+chalmers = "jordanka-kovaceva"
+
+[[member]]
+name = "Christian-Nils Åkerberg Boda"
+cid = "boda"
+title = "Ph.D. Student"
+photoid = "TM/Personal/christiannilsboda"
+chalmers = "christian-nils-boda"
+
+[[member]]
+name = "Linda Pipkorn"
+cid = "lindapi"
+title = "Ph.D. Student"
+
+[[member]]
+name = "Alexander Rasch"
+cid = ""
+title = "Master Student"
+
+[[member]]
+name = "Gabriele Panero"
+cid = ""
+title = "Master Student"

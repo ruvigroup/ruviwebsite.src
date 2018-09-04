@@ -1,0 +1,58 @@
+baseURL = "https://ruvigroup.github.io/ruvi.website/"
+languageCode = "en-us"
+title = "RUVI - Road-User / Vehicle Interaction group"
+theme = "minimal"
+googleAnalytics = ""
+
+[params]
+author = "Road-User / Vehicle Interaction group"
+description = "Website of the Road-User / Vehicle Interaction research group"
+githubUsername = "ruvigroup"
+accent = "#515F90"
+showBorder = true
+backgroundColor = "white"
+font = "Karla" # should match the name on Google Fonts!
+highlight = true
+highlightStyle = "solarized-dark"
+highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+profilePic = "img/ruvi.png"
+headerPic = "img/flat_ruvi.png"
+copyright = "&copy; All rights reserved RUVI group."
+
+[[menu.main]]
+url = "/"
+name = "Home"
+weight = 1
+
+[[menu.main]]
+url = "/about-us/"
+name = "About Us"
+weight = 2
+
+[[menu.main]]
+url = "/projects/"
+name = "Projects"
+weight = 3
+
+[[menu.main]]
+url = "/publications/"
+name = "Publications"
+weight = 4
+
+[[menu.main]]
+url = "/media/"
+name = "Media"
+weight = 5
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+url = "https://www.researchgate.net/lab/Road-user-Vehicle-Interaction-Marco-Dozza"
+name = "researchgate"
+weight = 1
+
+[[menu.icon]]
+url = "https://github.com/ruvigroup"
+name = "github"
+weight = 2
