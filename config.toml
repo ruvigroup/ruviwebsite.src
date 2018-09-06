@@ -1,4 +1,4 @@
-baseURL = "https://ruvigroup.github.io/ruvi.website/"
+baseURL = "https://ruvigroup.github.io/"
 languageCode = "en-us"
 title = "RUVI - Road-User / Vehicle Interaction group"
 theme = "minimal"

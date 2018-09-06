@@ -47,16 +47,18 @@ photoid = "TM/Personal/christiannilsboda"
 chalmers = "christian-nils-boda"
 
 [[member]]
+name = "Prateek Thalya"
+cid = ""
+title = "Industrial Ph.D. Student (Veoneer)"
+
+[[member]]
 name = "Linda Pipkorn"
 cid = "lindapi"
 title = "Ph.D. Student"
+photoid = "M2/Personal/lindapipkorn"
+chalmers = "lindapi"
 
 [[member]]
 name = "Alexander Rasch"
 cid = ""
-title = "Master Student"
-
-[[member]]
-name = "Gabriele Panero"
-cid = ""
-title = "Master Student"
+title = "Ph.D. Student"
