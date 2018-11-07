@@ -5,6 +5,18 @@ link = "xGqwhXAyCRY"
 type = "video"
 
 [[media]]
+title = "Driver in crossing interaction with pedestrians -- Simulator"
+description = "This video is from the DIV project (WP1) and shows the driving simulator set up used to assess driver comfort zone when negotiating and intersection with a pedestrian. The experiment was based on OpenDS."
+link = "G-0f5Q4iIt4"
+type = "video"
+
+[[media]]
+title = "Field trial study -- Truck overtaking a cyclist"
+description = "Example of a truck overtaking a cyclist observed in the field trial study carried out by the RUVI group."
+link = "043iIHmC6s8"
+type = "video"
+
+[[media]]
 title = "Automated vehicles: turn left across path, negotiating with oncoming traffic and bicyclist"
 description = ""
 link = "FNcMsejgalI"
@@ -68,11 +80,4 @@ type = "video"
 title = "SAFER100car"
 description = ""
 link = "mucEqDbzlRQ"
-type = "video"
-
-
-[[media]]
-title = "Field trial study -- Truck overtaking a cyclist"
-description = "Example of a truck overtaking a cyclist observed in the field trial study carried out by the RUVI group."
-link = "043iIHmC6s8"
 type = "video"
