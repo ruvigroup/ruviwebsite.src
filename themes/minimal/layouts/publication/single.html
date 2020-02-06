@@ -1,0 +1,72 @@
+{{ partial "header" . }}
+
+<main>
+  <h1>List of publications</h1>
+  <br>
+  <div class="text-justify">
+
+    <div>Below, the 30 most recent publications of the RUVI group are listed. For a complete list, please go to <a
+      target="_blank" href="https://research.chalmers.se">research.chalmers.se</a>.</div>
+
+    <ul id="publications"></ul>
+  </div>
+</main>
+{{ partial "footer.html" . }}
+<script>
+function formatEntry(data, el){
+  if (data==undefined){
+    return;
+  }/*
+  if (data.Persons.length > 2){
+  personStr = data.Persons[0].PersonData.LastName + ', ' + data.Persons[0].PersonData.FirstName + ', et al.';
+} else {*/
+personStr = ''
+for (j=0;j<data.Persons.length;j++){
+  if (j<data.Persons.length-1){
+    personStr += data.Persons[j].PersonData.DisplayName + ', '
+  } else {
+    personStr += data.Persons[j].PersonData.DisplayName
+  }
+}
+personStr = '<span style="font-weight: bold">'+personStr+'</span>'
+//  }
+typeStr = ' <a href=' + data.DetailsUrlEng + ' target="_blank"><span style="font-weight: bold">[' + data.PublicationType.NameEng + ']</span></a></li>';
+
+publicationStr = '';
+if (data.Source!=undefined) {
+  if (data.Source.SourceSerial!=undefined){
+    publicationStr = '<li>'+ personStr + ' (' + data.Year + '). "' + data.Title + '". ' + data.Source.SourceSerial.Title +
+    ', ' + data.Source.SourceSerial.Publisher + ', ' + data.Source.SourceSerial.Country + '.';
+  } else {
+    publicationStr = '<li>'+ personStr + ' (' + data.Year + '). "' + data.Title + '". ' + data.Source.Title +'.';
+  }
+}
+else {
+  publicationStr = '<li>'+ personStr + ' (' + data.Year + '). "' + data.Title + '".';
+}
+el.innerHTML += publicationStr + typeStr;
+}
+
+function listPublications(data){
+  publicationElm = document.getElementById("publications");
+  console.log(data)
+  for (i=0;i<data.TotalCount;i++){
+    formatEntry(data.Publications[i], publicationElm);
+  }
+}
+
+function httpGetAsync(theUrl, callback)
+{
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+    callback(xmlHttp.responseText);
+  }
+  xmlHttp.open("GET", theUrl, true); // true for asynchronous
+  xmlHttp.send(null);
+}
+list_cid = '{{ range $.Site.Data.members.member }}{{ if .cid}}{{ .cid }},{{end}}{{ end }}';
+json_str = '{'+list_cid.substring(0, list_cid.length-1)+'}'
+url = 'https://chalmers-research-publications-prod.azurewebsites.net/api/PublicationsConnectedToPerson?max=30&cid='+json_str;
+httpGetAsync(url, function(a){listPublications(JSON.parse(a))})
+</script>

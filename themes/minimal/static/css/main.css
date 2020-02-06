@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 55px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main {
+    margin: auto;
+    padding: 25px;
+    flex: 1 0 auto;
+    max-width: 750px;
+}
+
+iframe {
+    width: 80vw;
+    max-width: 750px;
+    max-height: 422px;
+    height: 45vw; /* 100/56.25 = 560/315 = 1.778 */
+}
+/*footer*/
+
+ul {
+  padding-left: 0px;
+}
+
+.copyright {
+    margin: 15px 0;
+}
+
+/*home page*/
+
+.intro {
+    transform: translateY(22vh);
+}
+
+.intro > h1 {
+    color: #212121;
+    font-size: 12vh;
+}
+
+.intro > h2 {
+    color: #757575;
+    font-size: 3vmin;
+}
+
+/*apply accent colour to links*/
+
+a:link, a:visited {
+    color: var(--accent);
+}
+
+a.icon:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent) !important;
+}
+
+/*paginator at bottom of list view*/
+
+.pages {
+    padding: 15px 0;
+}
+
+.pages-icon {
+    padding: 0 15px;
+}
+
+/*list item for posts and projects*/
+
+.item {
+    padding: 10px 0;
+}
+
+.item-tag {
+    background-color: var(--accent);
+}
+
+/*navigation bar icons*/
+
+.navbar-icon {
+    font-size: 125%;
+    display: inline-block !important;
+}
+
+.navbar-icon a {
+  color: white !important;
+}
+
+.navbar-icon a:hover {
+  color: lightgray !important;
+}
+
+.navbar-icon i {
+  background: #666 !important;
+  padding: 2px;
+  border-radius: 2px;
+}
+/*coloured borders at top and bottom of the page*/
+
+.navbar.navbar-default {
+    border-top: var(--border-width) solid var(--accent);
+}
+
+.navbar-brand {
+  padding: 0px !important;
+}
+.navbar-brand img {
+  max-height: 100% !important;
+}
+
+.header-logo {
+  height: 50px;
+}
+footer {
+    border-bottom: var(--border-width) solid var(--accent);
+}
+
+img {
+    max-width: 100%;
+}
+
+span.people {
+   display: inline-block;
+   vertical-align: middle;
+   margin-left: 5px;
+   font-size: 1.5em;
+}
+.people-img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#projects {
+  margin-top: 2em;
+  padding-left: 0px;
+}
+#projects>li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+#publications {
+  margin-top: 2em;
+  padding-left: 0px;
+}
+#publications>li {
+  list-style: none;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+
+<main>
+  <h1>List of projects</h1>
+  <br>
+  <div class="text-justify">
+    <ul id="projects">
+      {{ range $.Site.Data.projects.project }}
+      <li><a href="https://research.chalmers.se/en/project/?id={{.id}}"><h3>{{ .name }}</h3></a></br>
+      <p class="description">{{ .description }}</p></li>
+    {{ end }}</ul>
+  </div>
+</main>
+{{ partial "footer.html" . }}

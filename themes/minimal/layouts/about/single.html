@@ -1,0 +1,58 @@
+{{ partial "header" . }}
+
+<main>
+
+  <h1>The RUVI group</h1>
+  <br>
+  <div class="text-justify">{{ .Content }}</div>
+
+  <div class="text-justify">
+    <h2>People</h2>
+    <ul style="text-align: left; list-style: none">
+      {{ range $.Site.Data.members.member }}
+      <li style="position: relative;">
+        {{ if .photoid }}
+        <div class="people-img"
+          style="background-image: url('https://www.chalmers.se/SiteCollectionImages/Institutioner/{{ .photoid }}');">
+        </div>
+        {{ else }}
+        <div class="people-img"
+          style="background-image: url('https://www.chalmers.se/_Layouts/ChalmersPublicWeb/Images/people_default.png');" />
+  </div>
+  {{end}}
+  {{ if .chalmers }}
+  <a href="https://www.chalmers.se/en/staff/Pages/{{ .chalmers }}.aspx" target="_blank"><span class="people">{{ .name }}
+      ({{ .title }})</span></a>
+  {{ else }}
+  <span class="people">{{ .name }} ({{ .title }})</span>
+  {{ end }}
+  </li>
+  {{ end }}
+  </ul>
+
+  <h2>Former</h2>
+  <ul style="text-align: left; list-style: none">
+    {{ range $.Site.Data.members.past_member }}
+    <li style="position: relative;">
+      {{ if .photoid }}
+      <div class="people-img"
+        style="background-image: url('https://www.chalmers.se/SiteCollectionImages/Institutioner/{{ .photoid }}');">
+      </div>
+      {{ else }}
+      <div class="people-img"
+        style="background-image: url('https://www.chalmers.se/_Layouts/ChalmersPublicWeb/Images/people_default.png');" />
+      </div>
+      {{end}}
+      {{ if .chalmers }}
+      <a href="https://www.chalmers.se/en/staff/Pages/{{ .chalmers }}.aspx" target="_blank"><span
+          class="people">{{ .name }} ({{ .title }})</span></a>
+      {{ else }}
+      <span class="people">{{ .name }} ({{ .title }})</span>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  </div>
+</main>
+
+{{ partial "footer.html" . }}

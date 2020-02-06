@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+<main>
+
+  <div class="intro">
+    {{ if .Site.Params.profilePic}}
+    {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+    {{ else}}
+    <h1>{{ .Site.Title }}</h1>
+
+    <h2>{{ markdownify .Site.Params.Description }}</h2>
+    {{end}}
+  </div>
+
+</main>
+
+{{ partial "footer" . }}

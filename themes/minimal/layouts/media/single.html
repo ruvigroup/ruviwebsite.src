@@ -1,0 +1,24 @@
+{{ partial "header" . }}
+
+<main>
+
+  <h1>Media</h1>
+  <br><div class="text-justify">{{ .Content }}</div>
+
+  <div class="text-justify">
+    <h2>Videos</h2>
+    <ul style="text-align: left; list-style: none">
+      {{ range $.Site.Data.medias.media }}
+      {{ if eq .type "video" }}
+      <li style="position: relative;">
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <iframe src="https://www.youtube.com/embed/{{ .link }}?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</main>
+
+{{ partial "footer.html" . }}
