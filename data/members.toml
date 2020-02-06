@@ -20,32 +20,11 @@ photoid = "TM/Personal/giuliofrancescobianchipiccinini.jpg"
 chalmers = "giulio-piccinini"
 
 [[member]]
-name = "Esko Lehtonen"
-cid = "eskol"
-title = "Post-doc"
-photoid = "M2/esko.lehtonen.jpg"
-chalmers = "esko-lehtonen"
-
-[[member]]
-name = "Alberto Morando"
-cid = "morando"
-title = "Ph.D. Student"
-photoid = "M2/Personal/albertomorando.jpeg"
-chalmers = "alberto-morando"
-
-[[member]]
 name = "Jordanka Kovaceva"
 cid = "kovaceva"
 title = "Ph.D. Student"
 photoid = "TM/Personal/jordanka.jpg"
 chalmers = "jordanka-kovaceva"
-
-[[member]]
-name = "Christian-Nils Åkerberg Boda"
-cid = "boda"
-title = "Ph.D. Student"
-photoid = "TM/Personal/christiannilsboda.jpg"
-chalmers = "christian-nils-boda"
 
 [[member]]
 name = "Prateek Thalya"
@@ -63,3 +42,19 @@ chalmers = "lindapi"
 name = "Alexander Rasch"
 cid = "arasch"
 title = "Ph.D. Student"
+photoid = "M2/Personal/RASCH.jpg"
+chalmers = "arasch"
+
+[[past_member]]
+name = "Alberto Morando"
+cid = "morando"
+title = "Ph.D. Student"
+photoid = "M2/Personal/albertomorando.jpeg"
+chalmers = "alberto-morando"
+
+[[past_member]]
+name = "Christian-Nils Åkerberg Boda"
+cid = "boda"
+title = "Ph.D. Student"
+photoid = "TM/Personal/christiannilsboda.jpg"
+chalmers = "christian-nils-boda"
